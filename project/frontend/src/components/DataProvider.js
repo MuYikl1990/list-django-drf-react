@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class DataProvider extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {data: [], loaded: false, placeholder: "Loading..."};
-        static propTypes = {
-            endpoint: PropTypes.string.isRequired,
-            render: PropTypes.func.isRequired
-        };
-    }
+    static propTypes = {
+        endpoint: PropTypes.string.isRequired,
+        render: PropTypes.func.isRequired
+    };
+
+	state = {
+		data: [], 
+		loaded: false, 
+		placeholder: "Loading..."
+		};
 
     componentDidMount(){
         fetch(this.props.endpoint)
             .then(response => {
-                if  (response.status != 200){
+                if (response.status != 200){
                     return this.setState({placeholder: "Something went wrong "});
             }
             return response.json();
@@ -24,7 +26,7 @@ class DataProvider extends React.Component{
 
     render(){
         const {data, loaded, placeholder} = this.state;
-        return loaded? this.props.render(data) : <p>{placeholder}</p>;
+        return loaded ? this.props.render(data) : <p>{placeholder}</p>;
     }
 }
 

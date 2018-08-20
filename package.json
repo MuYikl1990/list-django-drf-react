@@ -1,7 +1,7 @@
 {
   "name": "django-drf-react-quickstart",
   "version": "1.0.0",
-  "description": "",
+  "description": "----------------------------\r ## A concept of separating frontend from backend, which using Django REST framework for providing API endpoints to React.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,11 +18,19 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.2",
+    "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "webpack": "^4.16.4",
+    "weak-key": "^1.0.1",
+    "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0"
   },
-  "dependencies": {
-    "weak-key": "^1.0.0"
-  }
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuYikl1990/list-django-drf-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MuYikl1990/list-django-drf-react/issues"
+  },
+  "homepage": "https://github.com/MuYikl1990/list-django-drf-react#readme"
 }

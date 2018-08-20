@@ -4,7 +4,8 @@ import key from 'weak-key';
 
 const Table = ({data}) =>
     !data.length ? (
-        <p>Nothing to show </p>) : (
+        <p>Nothing to show </p>
+	) : (
         <div>
             <h2>
                 Showing <strong>{data.length} items</strong>
@@ -12,13 +13,13 @@ const Table = ({data}) =>
             <table>
                 <thead>
                     <tr>
-                        {object.entries(data[0]).map(el => <th key={key(el)}>{el[0]}</th>)}
+                        {Object.entries(data[0]).map(el => <th key={key(el)}>{el[0]}</th>)}
                     </tr>
                 </thead>
                 <tbody>
                     {data.map(el => (
                         <tr key={el.id}>
-                            {object.entries(el).map(el => <td key={key(el)}>{el[1]}>)}
+                            {Object.entries(el).map(el => <td key={key(el)}>{el[1]}</td>)}
                         </tr>
                     ))}
                 </tbody>
