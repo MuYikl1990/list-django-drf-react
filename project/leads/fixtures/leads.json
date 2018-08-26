@@ -18,5 +18,15 @@
       "message": "Welcome",
       "created_at": "2018-07-18 22:22:22"
     }
+  },
+  {
+    "model": "leads.lead",
+    "pk": 3,
+    "fields": {
+      "name": "James",
+      "email": "anything@qq.com",
+      "message": "Nice to meet you",
+      "created_at": "2018-07-30 23:24:25"
+    }
   }
 ]
