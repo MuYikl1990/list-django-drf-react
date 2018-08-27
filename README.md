@@ -13,7 +13,7 @@
 
 + *Babel* is a transcoder whose function is to change ES6 codes to ES5 codes for compatibility of browsers. Set up *Babel* via `npm i babel-core babel-loader babel-preset-env babel-preset-react babel-plugin-transform-class-properties --save-dev` or some other modules.
 
-+ Configure the *.babelrc* (set up presets and plugins) and *webpack.config.js* ( set up entry、output and loader) when *React、Webpack* and *Babel* are ready.
++ Configure the *.babelrc* (set up presets and plugins) and *webpack.config.js* ( set up entry、output and loader) when *React、Webpack* and *Babel* are ready ( `node_modules/` in the `.gitignore` ).
 
 + Then you could change some codes in `App.js` which bindings with *index.html* to effect the display of browser.
 
